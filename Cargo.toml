@@ -1,0 +1,20 @@
+[package]
+name = "oxiproxy"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+crossbeam-channel = "0.5.13"
+env_logger = "0.11.5"
+rustls = "0.23.15"
+crc32fast = "1.4.2"
+log = "0.4.22"
+pem = "3.0.4"
+rcgen = { version = "0.13.1", features = ["pem", "x509-parser"]}
+ring = "0.17.8"
+rustls-pki-types = "1.10.0"
+libc = "0.2.161"
+httparse = "1.9.5"
+serde = { version = "1", features = ["derive"]}
+serde_json = "1.0.132"
